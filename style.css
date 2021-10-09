@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap");
 
 .container {
@@ -5,59 +6,96 @@
     background-color: green;
 }
 
+h1 {
+  font-family: 'Bubblegum Sans', cursive;
+  font-size: 60px;
+  letter-spacing: 15px;
+  cursor: default;
+  max-width: 780px;
+  width: 100%;
+  margin: 50px auto;
+  animation: color-change 5s infinite;
+}
+
+@keyframes color-change {
+  from {color: yellow;}
+  to {color: darkblue;}
+}
+
+h1:hover {
+  transform: scale(1.1);
+  transition-duration: 1s;
+}
+
+h3 {
+  color: darkblue;
+  font-family: 'Bubblegum Sans', cursive;
+  font-size: 18px;
+  letter-spacing: 3px;
+  max-width: 380px;
+  width: 100%;
+  margin: 10px auto;
+  cursor: default;
+  border: 3px dotted yellow;
+  padding: 8px;
+  background-color: rgba(255, 255, 0, 0.5);
+  border-radius: 0 20px 0 20px;
+}
+
+h3:hover {
+  transform: scale(1.05);
+  transition-duration: 0.7s;
+  border: 3px dotted darkblue;
+  background-color: rgba(0, 0, 139, 0.5);
+  color: yellow;
+}
+
 footer p {
-    text-align: center;
-    font-size: 16px;
-    cursor: default;
-    font-family: "Gloria Hallelujah", cursive;
-    letter-spacing: 3px;
-    margin-bottom: 5px;
-    color: #f7f7f7;
-  }
-  
-  footer p:hover {
-    transform: scale(1.1);
-    transition-duration: 0.5s;
-    text-decoration: underline;
-  }
-  
-  #linkedin,
-  #github {
-    width: 30px;
-  }
-  
-  #linkedin:hover,
-  #github:hover,
-  #discord:hover,
-  #codepen:hover,
-  #gmail:hover {
-    transform: scale(1.1);
-    transition-duration: 0.5s;
-  }
-  
-  #gmail, #codepen {
-    width: 33px;
-    height: 33px;
-  }
+  text-align: center;
+  font-size: 12px;
+  cursor: default;
+  font-family: "Gloria Hallelujah", cursive;
+  letter-spacing: 3px;
+  margin: 30px 0 5px 0;
+  color: yellow;
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+}
 
-  #discord {
-      width: 30px;
-      height: 30px;
-  }
-  
-  #linkedin,
-  #github,
-  #discord,
-  #codepen,
-  #gmail {
-    padding-left: 12px;
-    padding-right: 12px;
-  }
+footer p:hover {
+  color: darkblue;
+  transform: scale(1.1);
+  transition-duration: 0.5s;
+}
 
-  #github, #codepen {
-    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+.icons {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#linkedin, #github, #discord, #codepen, #mail {
+    color: darkblue;
+    padding: 0 10px;
+}
+
+#linkedin:hover, #github:hover, #discord:hover, #codepen:hover, #mail:hover {
+  color: yellow;
+}
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
   }
   
-  footer .img {
-    text-align: center;
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: darkblue;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: yellow;
+    border-radius: 20px;
   }
